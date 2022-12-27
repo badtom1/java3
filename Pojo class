@@ -1,0 +1,37 @@
+package student;
+
+import javax.persistence.Entity;
+
+import javax.persistence.Id;
+
+@Entity
+public class getter_Setter {
+
+	@Id
+	private String id;
+	private String name;
+	private String marks;
+	public String getId() {
+		return id;
+	}
+	public void setId(String id) {
+		this.id = id;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public String getMarks() {
+		return marks;
+	}
+	public void setMarks(String marks) {
+		this.marks = marks;
+	}
+	@Override
+	public String toString() {
+		return "getter_Setter [id=" + id + ", name=" + name + ", marks=" + marks + "]";
+	}
+	
+}
